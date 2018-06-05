@@ -11,7 +11,8 @@ plt.ioff()
 
 # CASA imports
 from taskinit import *
-from tasks import *
+#from tasks import *
+from CASAtasks import *
 
 import logging
 logger = logging.getLogger('logger')
