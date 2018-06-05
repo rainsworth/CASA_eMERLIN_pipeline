@@ -109,10 +109,10 @@ from statwt import  statwt as statwt
 from tclean import  tclean as tclean
 from tclean2 import  tclean2 as tclean2
 from testconcat import  testconcat as testconcat
-from tsdbaseline import  tsdbaseline as tsdbaseline
-from tsdcal import  tsdcal as tsdcal
-from tsdfit import  tsdfit as tsdfit
-from tsdsmooth import  tsdsmooth as tsdsmooth
+#from tsdbaseline import  tsdbaseline as tsdbaseline
+#from tsdcal import  tsdcal as tsdcal
+#from tsdfit import  tsdfit as tsdfit
+#from tsdsmooth import  tsdsmooth as tsdsmooth
 from uvcontsub import  uvcontsub as uvcontsub
 from uvcontsub3 import  uvcontsub3 as uvcontsub3
 from uvmodelfit import  uvmodelfit as uvmodelfit
