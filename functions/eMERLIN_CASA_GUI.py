@@ -3,7 +3,8 @@ import os
 
 # CASA imports
 from taskinit import *
-from tasks import *
+#from tasks import *
+from CASAtasks import *
 
 from Tkinter import *
 import tkMessageBox
