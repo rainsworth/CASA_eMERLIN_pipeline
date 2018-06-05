@@ -13,7 +13,8 @@ from eMERLIN_CASA_GUI import GUI_pipeline
 
 # CASA imports
 from taskinit import *
-from tasks import *
+#from tasks import *
+from CASAtasks import *     # replacing tasks.py
 from recipes.setOrder import setToCasaOrder
 
 import logging
