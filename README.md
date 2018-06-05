@@ -32,6 +32,16 @@ To execute the pipeline from within CASA:
 > inputs, msinfo = run_pipeline(inputs_path=<input file>)
 ~~~~
 
+To execute the pipeline within a Jupyter Notebook:
+1. Follow the instructions for installing and using the [Jupyter kernel for CASA](https://github.com/aardk/jupyter-casa) (has options for both Singularity and Docker).
+2. Download the [jupyter_notebook](https://github.com/rainsworth/CASA_eMERLIN_pipeline/tree/jupyter_notebook) branch of the pipeline: `git clone -b jupyter_notebook https://github.com/rainsworth/CASA_eMERLIN_pipeline.git` .
+3. Launch the Jupyter Notebook server in a Singularity or Docker container, mounting the local directory containing the pipeline and a local directory containing the data you wish to run the pipeline on:
+  - Singularity: execute `singularity run -B /CASA_eMERLIN_pipeline:$HOME/pipeline -B /data:$HOME/data jupyter-casa.simg` then copy and paste the Jupyter Notebook token provided into your browser.
+  - Docker: under construction.
+4. Open a new Casa notebook and follow the instructions for executing the pipeline from within CASA above, or see the example notebook which can be found in the pipeline directory.
+
+
+
 ## Additional information ##
 
 - [Documentation [online]](documentation/docs.md)
