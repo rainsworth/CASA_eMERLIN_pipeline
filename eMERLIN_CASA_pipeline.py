@@ -8,7 +8,8 @@ import logging
 
 # CASA imports
 from taskinit import *
-from tasks import *
+#from tasks import *
+from CASAtasks import *
 
 pipeline_version = 'v0.7.11'
 
