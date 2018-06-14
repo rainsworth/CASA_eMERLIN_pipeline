@@ -37,7 +37,7 @@ To execute the pipeline within a Jupyter Notebook:
 2. Download the [jupyter_notebook](https://github.com/rainsworth/CASA_eMERLIN_pipeline/tree/jupyter_notebook) branch of the pipeline: `git clone -b jupyter_notebook https://github.com/rainsworth/CASA_eMERLIN_pipeline.git` .
 3. Launch the Jupyter Notebook server in a Singularity or Docker container, mounting the local directory containing the pipeline and a local directory containing the data you wish to run the pipeline on:
   - Singularity: execute `singularity run -B /CASA_eMERLIN_pipeline:$HOME/pipeline -B /data:$HOME/data jupyter-casa.simg` then copy and paste the Jupyter Notebook token provided into your browser.
-  - Docker: Follow [these](https://github.com/aardk/jupyter-casa) instructions. If on a Mac:
+  - Docker: Follow [these](https://github.com/aardk/jupyter-casa) instructions. If on a Mac (from [this](https://fredrikaverpil.github.io/2016/07/31/docker-for-mac-and-gui-applications/) blog post):
   ~~~~
   > open -a XQuartz
   > ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
