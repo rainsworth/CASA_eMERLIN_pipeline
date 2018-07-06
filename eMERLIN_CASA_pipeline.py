@@ -48,7 +48,8 @@ def get_pipeline_version(pipeline_path):
     short_commit = commit[:7]
     return branch, short_commit
 
-def run_pipeline(inputs=None, inputs_path=''):
+#def run_pipeline(inputs=None, inputs_path=''):
+def run_pipeline(inputs):
     # Setup logger
     logger = logging.getLogger('logger')
     logging.Formatter.converter = time.gmtime
@@ -74,10 +75,10 @@ def run_pipeline(inputs=None, inputs_path=''):
     logger.info('This log uses UTC times')
 
     # Inputs
-    if inputs_path == '': # Running pipeline
-        inputs = em.check_in(pipeline_path)
-    else: # Running pipeline from within CASA
-        inputs = em.headless(inputs_path)
+#    if inputs_path == '': # Running pipeline
+#        inputs = em.check_in(pipeline_path)
+#    else: # Running pipeline from within CASA
+#        inputs = em.headless(inputs_path)
 
     # Paths to use
     fits_path = em.backslash_check(inputs['fits_path'])
@@ -428,4 +429,3 @@ try:
 except:
     inputs = em.check_in(pipeline_path)
     run_pipeline(inputs=inputs)
-
